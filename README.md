@@ -43,7 +43,7 @@ ollama run mistral "Hello, how are you?"
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Apex077/AmbedkarGPT-Intern-Task.git
 cd AmbedkarGPT-Intern-Task
 
 # Create virtual environment (recommended)

@@ -1,6 +1,6 @@
 # AmbedkarGPT - Intern Task
 
-A simple command-line Q&A system that uses RAG (Retrieval-Augmented Generation) to answer questions based on Dr. B.R. Ambedkar's speech content. I've used a more quantized model: mistral:7b-instruct-q4_0, since I don't have a dGPU.
+A simple command-line Q&A system that uses RAG (Retrieval-Augmented Generation) to answer questions based on Dr. B.R. Ambedkar's speech content. I've used a more quantized model: `mistral:7b-instruct-q4_0`, since I don't have a dGPU.
 
 ## Overview
 
@@ -13,7 +13,7 @@ This system demonstrates the fundamental building blocks of a RAG pipeline:
 
 ## Technical Stack
 
-- **Python**: 3.8+ (Tested on Python 3.13.7)
+- **Python**: 3.8+ (Tested on Python 3.13.7, on Arch Linux)
 - **Framework**: LangChain for RAG orchestration
 - **Vector Database**: ChromaDB (local, no setup required)
 - **Embeddings**: HuggingFace `sentence-transformers/all-MiniLM-L6-v2`

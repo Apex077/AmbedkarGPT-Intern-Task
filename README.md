@@ -2,6 +2,12 @@
 
 A simple command-line Q&A system that uses RAG (Retrieval-Augmented Generation) to answer questions based on Dr. B.R. Ambedkar's speech content. I've used a more quantized model: `mistral:7b-instruct-q4_0`, since I don't have a dGPU.
 
+## Features
+
+- **Caching**: In case the content of `speech.txt` doesn't change, I've ensured that the same vector store is used, thus improving speed and reducing resource usage.
+- **Manual Cache Reset**: In case you require the cache to be reset manually, it can be done by using the `reset` option. It also monitors for changes in speech.txt, so a new vector store can be created if required.
+- **Lower Chances of Hallucination**: Chances of hallucination are very low.
+
 ## Overview
 
 This system demonstrates the fundamental building blocks of a RAG pipeline:
@@ -69,7 +75,7 @@ python main.py
    - Create vector store (and look for cached versions on subsequent runs)
    - Setup QA chain
 3. **Ask questions**: Type your questions about the speech content
-4. **Exit**: Type 'quit', 'exit', or 'q' to stop
+4. **Exit**: Type `quit`, `exit`, or `q` to stop, or `reset` to reset the vector store.
 
 ## Example Questions (For this assignment)
 
